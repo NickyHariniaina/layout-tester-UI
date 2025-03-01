@@ -1,9 +1,10 @@
 export const Bar = ({ inputId, minute, second }) => {
 
     return <div className="row">
-        <label htmlFor={inputId} className="col-10">
-            <button className="btn bg-light text-dark m-2">Start</button>
-        </label>
-        <div className="timer text-light col-2 display-3">{minute}:{second}</div>
+        <button htmlFor={inputId} className="btn m-2 btn-light col">Start</button>
+        <button className="btn btn-success m-2 col">Submit</button>
+        <button className="btn btn-outline-warning m-2 col">Pause</button>
+        <button className="btn btn-outline-danger m-2 col">Reset</button>
+        <div className="timer text-light fs-2 text-center">{minute}:{second}</div>
     </div>
 }
