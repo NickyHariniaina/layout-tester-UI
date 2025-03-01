@@ -1,0 +1,26 @@
+.key{
+    font-size:1.5em;
+    border: 1px rgba(136, 136, 136, 0.932) solid;
+    margin-inline: 1%;
+    width:6%;
+    aspect-ratio: 1/1;
+    text-align: center;
+}
+
+.keyboard-container__second-row {
+    position: relative;
+    left: 5%;
+}
+
+.keyboard-container__third-row{
+    position: relative;
+    left: 7%;
+}
+
+.thumb-place {
+    background-color: rgb(165, 165, 165);
+}
+
+.keyboard__tester-input__word {
+    opacity: 0.6;
+}
