@@ -1,4 +1,15 @@
 import { Navbar } from "../../Navbar/Navbar"
+import { SectionDocs } from "./Section-docs.jsx"
+
+// FIXME: 
+// - I don't know if i should use a map or a forEach for all of the data...
+// - Complete the data in "./keyboardData.js"
+
+// TODO: 
+// - Import all images in the public files.
+// - Add a css className to all of the components.
+// - Edit 40 images of layout.
+// - Search a design layout for the files and all the others.
 
 export const Documentation = () => {
     return <div className="docs">
@@ -14,15 +25,6 @@ export const Documentation = () => {
                 option4="About us"
                 link4="/about_us"/>
         </header>
-        <section>
-            <nav className="navbar bg-dark">
-                <form className="container-fluid justify-content">
-
-                </form>
-            </nav>
-            <main>
-                
-            </main>
-        </section>
+        <SectionDocs /> 
     </div>
 }
