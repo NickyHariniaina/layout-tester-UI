@@ -28,3 +28,11 @@ body {
 .keyboard__tester-input__word {
     opacity: 0.6;
 }
+
+.keyboard__tester-input__preview_success{
+    background-color: rgb(113, 234, 113) !important;
+}
+
+.keyboard__tester-input__preview_mistake{
+    background-color: rgb(237, 135, 135) !important;
+}
