@@ -37,7 +37,7 @@ export const TesterInput = ({ onKeyDown }) => {
       setTyped,
       touch,
       word,
-      setWordg
+      setWord,
       count,
       setCount,
       setLastInput,
