@@ -7,7 +7,7 @@ import "./Keyboard.css"
 
 export const Keyboard = ({ layout }) => {
     return <div className="keyboard">
-        <header className="keyboard__header bg-dark d-flex flex-row justify-content-around align-items-center py-2">
+        <header className="keyboard__header d-flex flex-row justify-content-around align-items-center py-2">
             <h1 className="text-light">Start typing</h1>
             <Navbar
                 option1="Go back home" link1="/"

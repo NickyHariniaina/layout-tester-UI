@@ -25,8 +25,18 @@ body {
     background-color: rgb(165, 165, 165);
 }
 
+.keyboard__tester-input { 
+    background-color: #121312;
+    color:black;
+}
+
 .keyboard__tester-input__word {
     opacity: 0.6;
+    transition: transform 0.3s ease;
+}
+
+.keyboard__tester-input__answer {
+    transition: transform 0.3s ease;
 }
 
 .keyboard__tester-input__preview_success{
@@ -36,3 +46,5 @@ body {
 .keyboard__tester-input__preview_mistake{
     background-color: rgb(237, 135, 135) !important;
 }
+
+  
