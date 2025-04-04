@@ -121,3 +121,12 @@ export const fetchAPI = async (
     setError(!error); // A pop-up will appear if there is an error.
   }
 };
+
+// TODO: Change the "inputPreviewEntry" name.
+
+export const showFocusedSign = (focusedState, inputPreviewEntry) => {
+  if (focusedState) {
+    inputPreview = document.querySelector(inputPreviewEntry);
+    inputPreview.classList.add("keyboard__tester-input__preview-focused");
+  } 
+}
