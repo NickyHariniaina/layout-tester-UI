@@ -3,8 +3,8 @@ import { Link } from "react-router"
 import "./Home.css"
 export const Home = () => {
     return <div className="home">
-        <header className="home__header d-flex flex-row align-items-center bg-dark justify-content-around py-2 sticky-top">
-            <h1 className="text-light">Layoutester</h1>
+        <header className="home__header d-flex flex-row align-items-center justify-content-around py-2 sticky-top">
+            <h1 className="text-dark">Layoutester</h1>
             <Navbar 
                 option1="Home"
                 link1="/"
