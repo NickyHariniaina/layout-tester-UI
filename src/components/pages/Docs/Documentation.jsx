@@ -1,30 +1,53 @@
-import { Navbar } from "../../Navbar/Navbar"
-import { SectionDocs } from "./Section-docs.jsx"
-
-// FIXME: 
-// - I don't know if i should use a map or a forEach for all of the data...
-// - Complete the data in "./keyboardData.js"
-
-// TODO: 
-// - Import all images in the public files.
-// - Add a css className to all of the components.
-// - Edit 40 images of layout.
-// - Search a design layout for the files and all the others.
+import { Navbar } from "../../Navbar/Navbar";
+import qwerty from "../../../assets/qwerty.png";
+import { ButtonTemplate } from "./ButtonTemplate";
+import "./Documentation.css";
 
 export const Documentation = () => {
-    return <div className="docs">
-        <header className="home__header d-flex flex-row align-items-center bg-dark justify-content-around py-2">
-            <h1 className="text-light">Documentation</h1>
-            <Navbar 
-                option1="Home"
-                link1="/"
-                option2="Start testing"
-                link2="/keyboard"
-                option3="Settings"
-                link3="/keyboard/settings"
-                option4="About us"
-                link4="/about_us"/>
-        </header>
-        <SectionDocs /> 
+  let list = 0;
+  // FIXME: Add a forEach to render the list in the bodyContent property.
+  // A lot to fix here.
+  return (
+    <div className="documentation">
+      <header className="documentation__header d-flex flex-row justify-content-around align-items-center py-2">
+        <h1 className="text-dark">RTFD</h1>
+        <Navbar
+          option1="Go back Home"
+          link1="/"
+          option2="Start testing"
+          link2="/keyboard"
+          option3="Settings"
+          link3="/keyboard/settings"
+          option4="About us"
+          link4="/about_us"
+        />
+      </header>
+
+      <nav className="my-4">
+        <ul className="nav justify-content-around">
+          <li className="nav-item">
+            <ButtonTemplate
+              title="View Keyboard List"
+              header="List of all avalaible keyboard"
+              bodyContent={list}
+            />
+          </li>
+          <li className="nav-item">
+            <ButtonTemplate
+              title="View ranking"
+              header="List of the best typer in the world"
+              bodyContent={list}
+            />
+          </li>
+          <li className="nav-item">
+            <ButtonTemplate
+              title="View Layout List"
+              header="List of all avalaible layout"
+              bodyContent={list}
+            />
+          </li>
+        </ul>
+      </nav>
     </div>
-}
+  );
+};
