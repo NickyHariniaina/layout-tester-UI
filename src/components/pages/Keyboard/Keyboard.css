@@ -1,26 +1,52 @@
-.key{
-    font-size:1.5em;
-    border: 1px rgba(136, 136, 136, 0.932) solid;
-    margin-inline: 1%;
-    width:6%;
-    aspect-ratio: 1/1;
-    text-align: center;
+body {
+  overflow-x: hidden;
+}
+
+.key {
+  font-size: 1.5em;
+  border: 1px rgba(136, 136, 136, 0.932) solid;
+  margin-inline: 1%;
+  width: 6%;
+  aspect-ratio: 1/1;
+  text-align: center;
 }
 
 .keyboard-container__second-row {
-    position: relative;
-    left: 5%;
+  position: relative;
+  left: 5%;
 }
 
-.keyboard-container__third-row{
-    position: relative;
-    left: 7%;
+.keyboard-container__third-row {
+  position: relative;
+  left: 7%;
 }
 
 .thumb-place {
-    background-color: rgb(165, 165, 165);
+  background-color: rgb(165, 165, 165);
+}
+
+.keyboard__tester-input {
+  background-color: #121312;
+  color: black;
 }
 
 .keyboard__tester-input__word {
-    opacity: 0.6;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+.keyboard__tester-input__answer {
+  transition: transform 0.3s ease;
+}
+
+.keyboard__tester-input__preview-focused {
+    box-shadow: 0 0 20px white;
+}
+
+.keyboard__tester-input__preview_success {
+  background-color: rgb(113, 234, 113) !important;
+}
+
+.keyboard__tester-input__preview_mistake {
+  background-color: rgb(237, 135, 135) !important;
 }
