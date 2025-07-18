@@ -1,0 +1,5 @@
+.documentation__header {
+  background: rgba(255, 255, 255, 0.27);
+  backdrop-filter: blur(7.5px);
+  color: black;
+}
