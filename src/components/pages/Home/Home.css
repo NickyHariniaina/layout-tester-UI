@@ -1,40 +1,37 @@
+h1 {
+  transition: all 0.3s;
+}
+
+h1:hover {
+  scale: 1.2;
+  cursor: none;
+}
 
 img {
   width: 600px;
 }
 
-.home {
-  animation-name: color-change;
+.home__header {
+  background: rgba(255, 255, 255, 0.27);
+  backdrop-filter: blur(7.5px);
+  color: black;
+}
+
+hr {
+  border: 2px rgb(0, 0, 0) solid;
+  animation-name: expand;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
-hr {
-    border: 2px rgb(0, 0, 0) solid;
-    animation-name:expand ;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-@keyframes color-change {
+@keyframes expand {
   0% {
-    background-color: rgb(255, 255, 255);
+    width: 0%;
   }
   50% {
-    background-color: rgb(209, 209, 209);
+    width: 50%;
   }
   100% {
-    background-color: rgb(255, 255, 255);
+    width: 0%;
   }
-}
-
-@keyframes expand {
-    0%{
-        width: 0%;
-    }
-    50%{
-        width: 50%;
-    }
-    100%{
-        width: 0%;
-    }
 }
